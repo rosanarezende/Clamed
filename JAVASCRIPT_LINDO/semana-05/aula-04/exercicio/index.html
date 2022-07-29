@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- importa js -->
+  <script src="formulario.js" type="module" defer></script>
+  <script src="usuario.js" type="module" defer></script>
+  <!-- importa css -->
+  <link rel="stylesheet" href="index.css">
+  <title>Exercício - Antes do ES6</title>
+</head>
+<body>
+    <h1>Exercício - Antes do ES6</h1>
+
+    <div class="container">
+      <div class="formulario">
+        <form action="index.php" method="post">
+            <!-- input para nome -->
+            <label for="nome">Nome:</label><br/>
+            <input type="text" name="nome" id="nome"><br/>
+            <!-- input para url da imagem -->
+            <label for="imagem">Imagem:</label><br/>
+            <input type="text" name="imagem" id="imagem"><br/>
+            <!-- input com mais de uma linha -->
+            <label for="descricao">Descricao:</label><br/>
+            <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea><br/>
+            <!-- botão para salvar dados -->
+            <div id="button-container">
+              <button type="submit">Salvar</button>
+            </div>
+        </form>
+      </div>
+      <div class="usuario"></div>
+    </div>
+</body>
+</html>
